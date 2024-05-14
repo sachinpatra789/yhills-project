@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechVolution 2024 Registration Form</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles can be added here */
+.container{
+   margin-top: 15px;
+}
+  </style>
+</head>
+<body>
+  <div class="container" style="border-radius:2px">
+    <h2 style="text-align: center;">TechVolution 2024 Registration Form</h2>
+    <form id="registrationForm">
+      <!-- Personal Information -->
+      <div class="form-group">
+        <h3>Personal Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" class="form-control" id="dob" required>
+        <div class="invalid-feedback">Please enter your date of birth.</div>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required>
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="nonBinary" value="Non-binary" required>
+          <label class="form-check-label" for="nonBinary">Non-binary</label>
+        </div>
+        <div class="invalid-feedback">Please select your gender.</div>
+      </div>
+      <!-- Contact Details -->
+      <div class="form-group">
+        <h3>Contact Details</h3>
+        <label for="email">Email Address:</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" class="form-control" id="phone" required>
+        <div class="invalid-feedback">Please enter a valid phone number.</div>
+      </div>
+      <div class="form-group">
+        <label for="street">Street Address:</label>
+        <input type="text" class="form-control" id="street" required>
+        <div class="invalid-feedback">Please enter your street address.</div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" id="city" required>
+          <div class="invalid-feedback">Please enter your city.</div>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="state">State:</label>
+          <select class="form-control" id="state" required>
+            <option value="Enter yourState">Enter your State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="	Kerala">Kerala</option>
+            <option value="	Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="	Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Puducherry">Puducherry</option>
+            <!-- Add state options here -->
+          </select>
+          <div class="invalid-feedback">Please select your state.</div>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="zip">Zip Code:</label>
+          <input type="text" class="form-control" id="zip" required>
+          <div class="invalid-feedback">Please enter your zip code.</div>
+        </div>
+      </div>
+      <!-- Additional Information -->
+      <div class="form-group">
+        <h3>Additional Information</h3>
+        <label>Event Preferences:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="preference1">
+          <label class="form-check-label" for="preference1">Option 1</label>
+        </div>
+        <!-- Add more preferences if needed -->
+      </div>
+      <div class="form-group">
+        <label for="dietary">Dietary Restrictions:</label>
+        <textarea class="form-control" id="dietary"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="tshirt">T-shirt Size:</label>
+        <select class="form-control" id="tshirt" required>
+          <option value="">Choose...</option>
+          <option value="XS">Extra Small</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">Extra Large</option>
+          <!-- Add more sizes if needed -->
+        </select>
+        <div class="invalid-feedback">Please select your t-shirt size.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    // Form validation and submission handling
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      // Prevent default form submission
+      event.preventDefault();
+
+      // Validate form inputs
+      if (!validateForm()) {
+        return;
+      }
+
+      // If form is valid, submit the form
+      submitForm();
+    });
+
+    // Function to validate form inputs
+    function validateForm() {
+      let isValid = true;
+
+      // Check each input field for validity
+      let inputs = document.querySelectorAll("#registrationForm input, #registrationForm select, #registrationForm textarea");
+      inputs.forEach(function(input) {
+        if (!input.checkValidity()) {
+          input.classList.add("is-invalid");
+          isValid = false;
+        } else {
+          input.classList.remove("is-invalid");
+        }
+      });
+
+      return isValid;
+    }
+
+    // Function to submit the form
+    function submitForm() {
+      // Here you can handle form submission, e.g., sending data to a server
+      // For now, let's display a confirmation message
+      alert("Registration successful! Thank you for registering for TechVolution 2024.");
+      // You can redirect to another page or perform any other action after successful registration
+    }
+  </script>
+</body>
+</html>
